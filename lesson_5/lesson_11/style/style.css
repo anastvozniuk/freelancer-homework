@@ -1,0 +1,368 @@
+/* небо */
+.sky {
+  position: relative;
+  display: block;
+  height: 400px;
+  width: auto;
+  background-color: #72A0C1;
+}
+
+.sun {
+  position: relative;
+  left: 50%;
+  top: 30%;
+  display: block;
+  height: 80px;
+  width: 80px;
+  outline: 20px dashed orange;
+  background-color: yellow;
+  border-radius: 100%;
+  z-index: 2;
+
+}
+
+/* хмари */
+
+.cloud-1 {
+  position: relative;
+  top: 12%;
+  left: 30%;
+  height: 50px;
+  width: 70px;
+  background-color: #fff;
+  border: 7px dashed lightskyblue;
+  border-radius: 100%
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  height: 40px;
+  width: 60px;
+  background-color: #ffffffe3;
+  border-radius: 100%
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  height: 40px;
+  width: 60px;
+  background-color: #ffffffe6;
+  border-radius: 100%
+}
+
+/* трава */
+.ground-item {
+  display: block;
+  height: 600px;
+  width: auto;
+  background-color: green;
+}
+
+.ground__grass {
+  height: 100%;
+
+  background-image: url("../image/pole.jpg");
+  /* background-size: 200px; */
+  background-position: center;
+  /* opacity: 0.4; */
+}
+
+/* Дорога */
+.road-item {
+  position: absolute;
+  top: 60%;
+  height: 150px;
+  width: 100%;
+  background-color: #303030;
+  opacity: 1;
+}
+
+.road-line {
+  position: absolute;
+  top: 66%;
+  width: 100%;
+  border: 10px dashed yellow;
+  z-index: 1;
+}
+
+/* Авто!!! */
+/* тіло авта */
+.body-car {
+  position: relative;
+  height: 100px;
+  width: 400px;
+  border-radius: 0px 16px 10px 10px;
+  background-color: black;
+  margin: 1px auto;
+  z-index: 2;
+}
+
+
+.triangle-1 {
+  position: absolute;
+  left: 62%;
+  bottom: 100%;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid black;
+}
+
+.triangle-2 {
+  position: absolute;
+  left: 71%;
+  bottom: 98%;
+  width: 0;
+  border-top: 15px solid transparent;
+  border-left: 110px solid black;
+}
+
+/* вікна для авта */
+.windows {
+  position: absolute;
+  left: 0%;
+  bottom: 100%;
+  height: 70px;
+  width: 250px;
+  border-radius: 10px 5px 0 0;
+  background-color: black;
+}
+
+.window-1 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  height: 55px;
+  width: 65px;
+  background-color: #6699cc;
+  border-radius: 10px;
+}
+
+.window-2 {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  height: 55px;
+  width: 65px;
+  background-color: #6699cc;
+  border-radius: 10px;
+}
+
+.window-4 {
+  position: absolute;
+  left: 69%;
+  top: 20%;
+  height: 55px;
+  width: 55px;
+  background-color: #6699cc;
+  border-radius: 10px 0 0 10px;
+  z-index: 3;
+}
+
+.window-triangle {
+  position: absolute;
+  top: 20%;
+  left: 91%;
+  bottom: 100%;
+  border-right: 15px solid transparent;
+  border-bottom: 55px solid #6699cc;
+}
+
+.font-window {
+  position: absolute;
+  top: 7%;
+  left: 102%;
+  bottom: 100%;
+  border-right: 25px solid transparent;
+  border-bottom: 55px solid #6699cc;
+  border-radius: 0 0 3px 3px;
+  transform: skew(15deg, 5deg);
+  z-index: 3;
+}
+
+/* колеса */
+.shadow-1 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  height: 40px;
+  width: 77px;
+  background-color: #181818;
+  outline: 8px solid #202020;
+  border: 2px solid #505050;
+  border-radius: 20px 20px 0 0;
+}
+
+.shadow-2 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  height: 40px;
+  width: 77px;
+  background-color: #181818;
+  outline: 8px solid #202020;
+  border: 2px solid #505050;
+  border-radius: 20px 20px 0 0;
+}
+
+
+.wheel-1 {
+  position: absolute;
+  top: 63%;
+  left: 11%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 3;
+}
+
+.star-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: gray;
+  outline: 14px dashed gray;
+}
+
+.wheel-2 {
+  position: absolute;
+  top: 63%;
+  left: 71%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 3;
+}
+
+.star-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: gray;
+  outline: 14px dashed gray
+}
+
+/* деталі */
+.line-1 {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  width: 70px;
+  border: 3px solid #282828;
+}
+
+.line-2 {
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  width: 70px;
+  border: 3px solid #282828;
+}
+
+.line-3 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  width: 70px;
+  border: 3px solid #282828;
+}
+
+.mirror {
+  position: absolute;
+  left: 60%;
+  bottom: 88%;
+  height: 30px;
+  width: 43px;
+  border-radius: 10px;
+  background-color: #101010;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+.lamp {
+  position: absolute;
+  left: 93%;
+  bottom: 60%;
+  height: 20px;
+  width: 18px;
+  border-radius: 10px;
+  background-color: #D0D0D0;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+.bamper-1 {
+  position: absolute;
+  left: 90%;
+  bottom: 0%;
+  height: 20px;
+  width: 48px;
+  border-radius: 10px;
+  background-color: #202020;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+.bamper-2 {
+  position: absolute;
+  left: 29%;
+  bottom: -9%;
+  height: 20px;
+  width: 159px;
+  border-radius: 10px;
+  background-color: #202020;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+.bamper-3 {
+  position: absolute;
+  left: -3%;
+  bottom: -3%;
+  height: 20px;
+  width: 48px;
+  border-radius: 10px;
+  background-color: #202020;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+.circle-front {
+  position: absolute;
+  left: -8%;
+  top: 40%;
+  height: 70px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: black;
+  border: 2px solid #505050;
+  z-index: 4;
+}
+
+
+/* Ефекти */
+.sun:hover {
+  transform: rotate(260deg);
+}
+
+.wheel-2:hover {
+  transform: rotate(300deg);
+}
+
+.wheel-1:hover {
+  transform: rotate(300deg);
+}

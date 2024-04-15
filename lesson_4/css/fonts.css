@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "proxima regular";
+  font-family: "proxima";
   src: url("./proximanova_regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "proxima bold";
+  font-family: "proxima";
   src: url("./proximanova_bold.woff") format("woff");
   font-display: swap;
   font-weight: 700;
@@ -15,9 +15,12 @@
 }
 
 @font-face {
-  font-family: "proxima black";
+  font-family: "proxima";
   src: url("./proximanova_black.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Comforter:regular);

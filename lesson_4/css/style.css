@@ -1,6 +1,12 @@
+/* Підключення css */
+ @import url(./reset.css);
+ @import url(./fonts.css);
+
+
 .item5 {
   font-family: "Vollkorn";
   color: blueviolet;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -39,16 +45,17 @@
 }
 
 .article_title {
-  font-family: proxima bold;
-  font-weight: normal;
+  font-family: "proxima", serif;
+  font-weight: 700;
   color: #2b2929;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .article_text {
-  font-family: proxima regular, serif;
+  font-family: "proxima", serif;
   line-height: 20px;
+  font-weight: 400;
 }
 
 p {
