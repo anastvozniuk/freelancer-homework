@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  transition: all 0.3s;
+}
+
+.content {
+  display: flex;
+}
+
+h1 {
+  font-family: "Roboto";
+}
+
+.line__1 {
+  width: 50px;
+  height: 50px;
+
+  background-color: lightblue;
+
+  cursor: pointer;
+
+  pointer-events: all;
+}
+
+.line__1:hover + .line__2,
+.line__2:hover {
+  visibility: visible;
+  width: 100%;
+}
+
+.line__2 {
+  width: 50px;
+  background-color: lightblue;
+  height: 50px;
+}
+
+.line__3 {
+  margin-left: auto;
+  height: 50px;
+  width: 50px;
+  background-color: lightblue;
+  visibility: hidden;
+}
+
+.line__1:hover ~ .line__3,
+.line__2:hover + .line__3,
+.line__3:hover {
+  visibility: visible;
+}
+
+.line__3:hover ~ .line__2 {
+  width: 100%;
+}

@@ -1,0 +1,338 @@
+@import url(reset.css);
+@import url(fons.css);
+
+
+/* WRAPPER */
+.wrapper {
+
+    overflow: clip;
+    min-height: 100%;
+
+}
+
+.header {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    color: #535353;
+    font-size: 13px;
+    font-style: normal;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+.header-top__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.header-top__list {
+    display: inline-flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.phone {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+
+.header-top__helps {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+
+}
+
+.header-top__list-help {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+
+/* MIDLE */
+
+
+.header-midle__container-search {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 43px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    max-width: 418px;
+    border-radius: 8px 8px 8px 8px;
+    outline: none;
+}
+
+.search-form__input {
+    outline: none;
+}
+
+.contacts-phone {
+    display: inline-flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-phone {
+    color: #535353;
+    font-size: 13px;
+    font-style: normal;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.conect-tel {
+    color: #2b2929;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/* header bottom */
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom__list-proposition {
+    display: inline-flex;
+    gap: 30px;
+
+}
+
+.header-bottom__list {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* MAIN */
+
+.main {
+    background-color: #D9D9D9;
+    background-size: 100vw;
+}
+
+/* BANNER */
+
+.head-img {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* !POPULAR CATEGORY */
+
+.category {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    color: #2b2929;
+    font-size: 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.category__title {
+    padding: 70px 0 40px 0;
+    color: #2b2929;
+    font-size: 40px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    line-height: 48px;
+}
+
+.category__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.category__item {
+    width: 100%;
+    overflow: hidden;
+    max-width: 250px;
+    box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, .06);
+    border-radius: 8px 8px 8px 8px;
+    background-color: #fff;
+    padding-bottom: 24px;
+}
+
+.category__text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.category__container-vector {
+    display: flex;
+    justify-content: end;
+    padding: 0 20px 20px 0;
+}
+
+.category__number {
+    color: #b1b1b1;
+}
+
+/* !POPULAR category */
+
+.popular-products {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    color: #2b2929;
+    font-size: 19px;
+    text-align: left;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 70px 0 40px 0;
+}
+
+.title-h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.look-link {
+    color: #ffbc57;
+    font-size: 19px;
+    font-style: normal;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards__item {
+    justify-content: start;
+    max-width: 300px;
+    padding: 20px;
+    border-top: 1px solid #e3e2e2;
+    box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+    align-items: center;
+    border-left: 1px solid #e3e2e2;
+    border-right: 1px solid #e3e2e2;
+    border-bottom: 1px solid #e3e2e2;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #fff;
+}
+
+.cards__text-cards {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.cards__information::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../image/goods/check.svg) 0 0 / 100% no-repeat;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.cards__span,
+.cards__information {
+    color: #535353;
+    font-size: 13px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+.cards__sell {
+    color: #e03d3d;
+    text-decoration: line-through;
+}
+
+.cards__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards__span-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__prise {
+    color: #2b2929;
+    font-size: 20px;
+    font-family: "Proxima Nova", sans-serif;
+    line-height: 28px
+}
+
+/* !SELL SECTION */
+
+.sell {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.sell__list {
+    display: flex;
+    gap: 30px;
+}
+
+.sell__img {
+    width: 100%;
+    height: auto;
+    max-width: 410px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.footer {
+    background-color: #2B2929;
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 44px 0 0 115px;
+}
