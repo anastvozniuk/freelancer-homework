@@ -1,0 +1,252 @@
+/* !Підключення */
+/* обнулення */
+@import url(./reset.css);
+/* шрифти */
+@import url(./fons.css);
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+
+/* Кнопка */
+.menu__dropdown {
+  height: 66px;
+}
+
+.menu__link-dropdown {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 146px;
+  width: 100%;
+  padding: 11px 0;
+
+  border-radius: 8px;
+  background-color: #ffbc57ad;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  z-index: 11;
+}
+
+.menu__img-item {
+  max-width: 40px;
+  width: 100%;
+}
+
+.menu__link-dropdown::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-image: url("../image/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__link-dropdown:focus+.menu__list-container {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 10;
+}
+
+.menu__link-dropdown:focus::before {
+  background-image: url("../image/clouse.svg");
+}
+
+.menu__link-dropdown:focus {
+  background-color: #FFBC57;
+}
+
+
+
+
+
+/* Випливаюче меню */
+
+.menu__list-container {
+  position: absolute;
+  top: 66px;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4963235294117647) 0%, rgba(0, 0, 0, 0.499124649859944) 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+.menu__list {
+  position: absolute;
+  top: 1%;
+  left: 10%;
+  padding: 8px 0;
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px 0 0 8px;
+  color: #2b2929;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  /* 28px/20 */
+}
+
+
+
+.menu__item:hover {
+  background-color: #FFBC57;
+}
+
+.menu__item::after {
+  content: '';
+  display: flex;
+  height: 24px;
+  width: 24px;
+  background-image: url('../image/arrow-or.svg');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu__item:hover::after {
+  background-image: url('../image/arrow.svg');
+}
+
+.menu__item,
+.menu__subitem {
+  padding: 0 18px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.menu__item:hover .menu__sublist {
+  display: block;
+  z-index: 4;
+}
+
+
+
+.menu__link-item {
+  position: absolute;
+  left: 85px;
+}
+
+
+/* підменю */
+
+.menu__sublist {
+  display: none;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  max-width: 300px;
+  width: 100%;
+  height: 616px;
+  background-color: #fff;
+  color: #2b2929;
+  font-size: 19px;
+  font-style: normal;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  border-left: 5px solid #FFBC57;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/* Популярні категорії */
+.popular-category {
+  background-color: #B1B1B1;
+  height: 730px;
+
+}
+
+.popular-category__container {
+  margin: 0 auto;
+  max-width: 1290px;
+  width: 100%;
+}
+
+.popular-category__title {
+  margin-bottom: 40px;
+  color: #2b2929;
+  font-size: 40px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 48px
+}
+
+.popular-category__card {
+  position: relative;
+  max-width: 262px;
+  width: 100%;
+  box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, .06);
+  border-radius: 8px 8px 8px 8px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.popular-category__img-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #2b2929;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.popular-category__number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #b1b1b1;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+
+.popular-category__link {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 50px;
+}
+
+.popular-category__card:hover .popular-category__img-title {
+  color: #FFBC57;
+}
+
+.popular-category__card:hover .popular-category__link {
+  display: block;
+}
