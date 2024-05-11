@@ -1,8 +1,19 @@
+/* Підключення */
+
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
 * body {
   background-color: #fff;
 }
 
 .about {
+  text-align: center;
+  padding: 120px 0 20px 0;
+  margin: 0 auto;
+  font-size: 60px;
   font-family: "Exo";
   background-image: url("../image/about.png");
   min-width: 1512px;
@@ -12,11 +23,6 @@
 }
 
 .about__title {
-  text-align: center;
-  min-height: 120px;
-  padding: 120px 0 20px 0;
-  margin: 0 auto;
-  font-size: 60px;
   font-family: "Exo", sans-serif;
   font-weight: 700;
   line-height: 70px;
@@ -24,12 +30,12 @@
   color: white;
 }
 
-.about__line {
-  display: block;
-  margin: 0 auto;
-  max-width: 30%;
-  height: 1px;
+.about__title::after {
   content: "";
+  display: block;
+  margin: 20px auto 0;
+  max-width: 400px;
+  height: 1px;
   background: linear-gradient(90deg,
       rgba(255, 0, 0, 1) 0%,
       rgba(66, 255, 0, 1) 51%,
@@ -71,26 +77,74 @@
   vertical-align: middle;
 }
 
+.about__span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+  margin-left: 60px;
+}
+
 /* contacts */
 
 .contacts {
   display: inline-block;
-  height: 110px;
+  vertical-align: middle;
   width: 100%;
-  padding: 60px 0 0 0;
   background-color: black;
   text-align: center;
   color: #fff;
 }
 
-.contacts__information {
-  text-align: center;
+.contacts__item {
+  display: inline-block;
+  margin-right: 80px;
+  vertical-align: middle;
   font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -1px;
 }
 
-.contacts__img {
-  padding-left: 20px;
+.number::before {
+  content: "";
+  margin-right: 20px;
+  vertical-align: middle;
+  background-image: url(../image/call.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
 }
+
+.adress::before {
+  content: "";
+  margin-right: 20px;
+  vertical-align: middle;
+  background-image: url(../image/location.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.email::before {
+  content: "";
+  margin-right: 20px;
+  vertical-align: middle;
+  background-image: url(../image/email.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
 
 /* article */
 
@@ -102,6 +156,7 @@
   min-height: auto;
   text-align: left;
   margin: 0 auto;
+  width: 1070px;
 }
 
 .article__title {
@@ -109,7 +164,7 @@
   font-family: "Proxima Nova semibold", sans-serif;
   font-weight: 400;
   line-height: 48px;
-  padding: 10px 0 40px 0;
+  margin: 10px auto 30px;
 }
 
 .article__img {
@@ -117,31 +172,39 @@
   height: auto;
   margin: 0;
   max-width: 1070px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   border-radius: 8px 8px 8px 8px;
 }
 
 .article__text-about {
-  font-family: "proxima regular", sans-serif;
+  font-family: "proxima Regular", sans-serif;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 10px;
   letter-spacing: 0;
 }
 
-.aticle__subtitle {
+.article__subtitle {
   font-size: 20px;
   font-family: "Proxima Nova semibold", sans-serif;
   font-weight: 400;
   line-height: 28px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.aticle__subtitle-paragraf {
-  font-family: "proxima regular", sans-serif;
+.article__list {
+  margin-right: 15px;
+  text-align: left;
+}
+
+.article__item-list {
+  font-family: "Proxima Regular", sans-serif;
+  text-align: left;
+  vertical-align: middle;
   font-weight: 400;
   line-height: 30px;
-  padding: 0 0 20px 0;
+  margin-bottom: 20px;
+  padding-left: 47px;
 }
 
 .article__img-done {
@@ -153,6 +216,20 @@
   font-family: "proxima regular", sans-serif;
   font-weight: 400;
   line-height: 30px;
+}
+
+.article__item-list::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 11px;
+  margin-left: -47px;
+  background-image: url(../image/mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 /* main */
