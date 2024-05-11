@@ -1,111 +1,150 @@
 @import url(reset.css);
-@import url(animation.css);
+@import url(keyframes.css);
+
+body,
+html {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 0;
+}
 
 /* небо */
-.sky {
+.day {
   position: relative;
-  display: block;
   height: 400px;
   width: auto;
+}
+
+.sky {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 400px;
   background-color: #72A0C1;
+  transform: rotate(360deg);
+  z-index: 2;
+
+
+  animation-name: sky-day;
+  animation-duration: 12s;
+  animation-delay: 12s;
+  animation-timing-function: linear;
+  Animation-iteration-count: 1;
 }
 
 .sun {
-  position: relative;
-  left: 50%;
-  top: 30%;
+  display: inline-block;
+  position: absolute;
   display: block;
+  top: 100%;
+  left: 100%;
   height: 80px;
   width: 80px;
   outline: 20px dashed orange;
   background-color: yellow;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 1;
 
   animation-name: sun-rotate;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-
+  animation-duration: 13s;
+  /* animation-delay: 8s; */
+  animation-timing-function: ease-in-out;
+  Animation-iteration-count: 1;
 }
 
-/* хмари */
+.night {
+  display: block;
+  height: 400px;
+  background-image: url(../image/star-night.jpg);
+  background-size: cover;
+  z-index: 5;
 
-.cloud-1 {
-  position: relative;
-  top: 12%;
-  left: 30%;
-  height: 50px;
-  width: 70px;
-  background-color: #fff;
-  border: 7px dashed lightskyblue;
-  border-radius: 100%
+  animation-name: sky-night;
+  animation-duration: 14s;
+  animation-delay: 13s;
+  animation-timing-function: linear;
+  Animation-iteration-count: 1;
 }
 
-.cloud-2 {
+.moon {
+  display: inline-block;
   position: absolute;
-  top: 10%;
-  left: 32%;
-  height: 40px;
-  width: 60px;
-  background-color: #ffffffe3;
-  border-radius: 100%
+  right: 100%;
+  top: 100%;
+  display: block;
+  height: 120px;
+  width: 100px;
+  background-image: url(../image/moon.png);
+  background-size: cover;
+  z-index: 1;
+
+  animation-name: moon-animation;
+  animation-duration: 14s;
+  animation-delay: 13s;
+  animation-timing-function: ease-out;
+  Animation-iteration-count: 1;
 }
 
-.cloud-3 {
-  position: absolute;
-  top: 10%;
-  left: 28%;
-  height: 40px;
-  width: 60px;
-  background-color: #ffffffe6;
-  border-radius: 100%
-}
+
+
 
 /* трава */
-.ground-item {
+.ground {
   display: block;
   height: 600px;
   width: auto;
-  background-color: green;
+  background-color: black;
 }
 
 .ground__grass {
+  position: relative;
   height: 100%;
-
   background-image: url("../image/pole.jpg");
   /* background-size: 200px; */
   background-position: center;
-  /* opacity: 0.4; */
+  z-index: 2;
+
+  animation-name: grass-animation;
+  animation-duration: 13s;
+  animation-delay: 11s;
+  animation-timing-function: ease-out;
+  Animation-iteration-count: 1;
 }
 
 /* Дорога */
-.road-item {
+.road {
   position: absolute;
-  top: 60%;
-  height: 150px;
-  width: 100%;
-  background-color: #303030;
-  opacity: 1;
+  background: url(../image/row.jpg) 0 0 repeat-x;
+  width: 1000%;
+  height: 180px;
+  z-index: 3;
+  animation-name: road-animation;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.road-line {
-  position: absolute;
-  top: 66%;
-  width: 100%;
-  border: 10px dashed yellow;
-  z-index: 1;
-}
+
 
 /* Авто!!! */
 /* тіло авта */
+
 .body-car {
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  left: 0;
   height: 100px;
   width: 400px;
   border-radius: 0px 16px 10px 10px;
   background-color: black;
-  margin: 1px auto;
-  z-index: 2;
+  z-index: 10;
+
+  animation-name: car-animation;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  Animation-iteration-count: 3;
 }
 
 
@@ -224,6 +263,11 @@
   border-radius: 100%;
   background-color: black;
   z-index: 3;
+
+  animation-name: wheel-animation;
+  animation-duration: 45ms;
+  animation-direction: normal;
+  Animation-iteration-count: infinite;
 }
 
 .star-1 {
@@ -248,6 +292,11 @@
   border-radius: 100%;
   background-color: black;
   z-index: 3;
+
+  animation-name: wheel-animation;
+  animation-duration: 45ms;
+  animation-direction: normal;
+  Animation-iteration-count: infinite;
 }
 
 .star-2 {

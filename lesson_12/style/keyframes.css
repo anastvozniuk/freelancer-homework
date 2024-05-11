@@ -1,0 +1,95 @@
+/* sky */
+
+@keyframes sky-day {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes sun-rotate {
+    0% {
+        left: 0;
+        top: 120%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    100% {
+        left: 100%;
+        top: 120%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
+
+/* grass */
+
+@keyframes sky-night {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes moon-animation {
+    0% {
+        right: 0;
+        top: 100%;
+
+    }
+
+    100% {
+        right: 50%;
+        top: 20%;
+    }
+}
+
+/* grass */
+@keyframes grass-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes road-animation {
+
+
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+
+@keyframes car-animation {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes wheel-animation {
+
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
