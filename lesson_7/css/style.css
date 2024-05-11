@@ -58,24 +58,24 @@
   display: inline-block;
   font-family: "Orbitron", serif;
   padding: 70px 138px 110px 0;
-  margin-left: 224px;
+  margin: 0 auto;
 }
 
 .about__span {
   font-size: 20px;
   font-style: normal;
   text-align: left;
-  margin-right: 60px;
   font-family: "Orbitron", sans-serif;
   color: #fff;
   font-weight: 500;
   line-height: 25px;
+  margin-left: 60px;
 }
 
-.about__elipse {
+/* .about__elipse {
   margin-right: 60px;
   vertical-align: middle;
-}
+} */
 
 .about__span::after {
   content: "";
@@ -101,14 +101,14 @@
 .contacts__item {
   display: inline-block;
   margin-right: 80px;
-  vertical-align: middle;
-  font-family: "Exo", sans-serif;
+  /* vertical-align: middle; */
+  font-family: " Orbitron", sans-serif;
   font-size: 20px;
   font-style: normal;
   margin-top: 0;
   text-align: left;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 25px;
   letter-spacing: -1px;
 }
 
