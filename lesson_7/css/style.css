@@ -114,6 +114,10 @@
   letter-spacing: -1px;
 }
 
+.contacts__item:last-child {
+  margin-right: 0;
+}
+
 .number::before {
   content: "";
   margin-right: 20px;
