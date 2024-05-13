@@ -10,7 +10,6 @@
 }
 
 .about {
-  text-align: center;
   padding: 120px 0 20px 0;
   margin: 0 auto;
   font-size: 60px;
@@ -23,6 +22,7 @@
 }
 
 .about__title {
+  margin: 0 0 20px;
   font-family: "Exo", sans-serif;
   font-weight: 700;
   line-height: 70px;
@@ -31,10 +31,15 @@
 }
 
 .about__title::after {
+  margin: 20px auto 0;
+
+
   content: "";
   display: block;
-  margin: 20px auto 0;
   max-width: 400px;
+
+  width: 100%;
+
   height: 1px;
   background: linear-gradient(90deg,
       rgba(255, 0, 0, 1) 0%,
@@ -43,6 +48,7 @@
 }
 
 .about__text {
+  margin: 0 auto 70px;
   font-size: 18px;
   text-align: center;
   font-family: "Exo", sans-serif;
@@ -50,34 +56,30 @@
   line-height: 40px;
   letter-spacing: -1px;
   max-width: 992px;
-  margin: 0 auto;
-  padding-top: 20px;
 }
 
-.about__introduce {
-  display: inline-block;
+.about__introduce-list {
+  margin: 0 0 0 224px;
+
   font-family: "Orbitron", serif;
-  padding: 70px 138px 110px 0;
-  margin: 0 auto;
+  text-align: left;
+  line-height: 25px;
+
 }
 
-.about__span {
+.about__introduce-item {
+  display: inline-block;
   font-size: 20px;
   font-style: normal;
   text-align: left;
   font-family: "Orbitron", sans-serif;
   color: #fff;
   font-weight: 500;
-  line-height: 25px;
-  margin-left: 60px;
+  margin-right: 60px;
 }
 
-/* .about__elipse {
-  margin-right: 60px;
-  vertical-align: middle;
-} */
 
-.about__span::after {
+.about__introduce-item::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -149,6 +151,7 @@
 /* article */
 
 .article {
+  padding: 10px 0 40px;
   background-color: #fff;
   color: #2b2929;
   font-size: 16px;
@@ -164,7 +167,8 @@
   font-family: "Proxima Nova semibold", sans-serif;
   font-weight: 400;
   line-height: 48px;
-  margin: 10px auto 30px;
+  margin: 0 0 30px;
+  text-align: center;
 }
 
 .article__img {
@@ -193,18 +197,21 @@
 }
 
 .article__list {
-  margin-right: 15px;
+  /* margin-right: 15px; */
   text-align: left;
 }
 
 .article__item-list {
+  padding-left: 47px;
   font-family: "Proxima Regular", sans-serif;
   text-align: left;
   vertical-align: middle;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 20px;
-  padding-left: 47px;
+}
+
+.article__item-list:not(.article__item-list:last-child) {
+  margin: 0 0 20px;
 }
 
 .article__img-done {
