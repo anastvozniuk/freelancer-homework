@@ -1,6 +1,9 @@
 @import url(reset.css);
 @import url(fons.css);
 
+html {
+    --card-title-line-height: 24px;
+}
 
 /* WRAPPER */
 .wrapper {
@@ -46,6 +49,7 @@
 
 .phone {
     display: inline-flex;
+    gap: 10px;
     flex-direction: row;
 }
 
@@ -69,8 +73,11 @@
     text-decoration: underline;
 }
 
-.header-top__item-help:hover {
+.header-top__item-help {
     transition: 0.3s;
+}
+
+.header-top__item-help:hover {
     transform: scale(1.1);
 }
 
@@ -172,13 +179,19 @@
     background-color: #f7a01d;
 }
 
-.link-favorites:hover {
+.link-basket {
     transition: 0.3s;
+}
+
+.link-favorites {
+    transition: 0.3s;
+}
+
+.link-favorites:hover {
     transform: scale(1.1);
 }
 
 .link-basket:hover {
-    transition: 0.3s;
     transform: scale(1.1);
 }
 
@@ -266,7 +279,7 @@
 }
 
 .category__title {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     color: #2b2929;
     font-size: 40px;
     font-style: normal;
@@ -295,6 +308,7 @@
     box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, .06);
     border-radius: 8px 8px 8px 8px;
     background-color: #fff;
+    transition: 0.3s;
     z-index: 2;
 }
 
@@ -333,7 +347,6 @@
 }
 
 .category__link-container:hover {
-    transition: 0.3s;
     transform: scale(1.03);
     box-shadow: -3px 4px 15px 0 #FFBC57;
 }
@@ -365,15 +378,18 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .title-h2 {
     font-size: 40px;
-
+    line-height: 1;
 }
 
 .look-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #FFBC57;
     font-size: 19px;
     font-style: normal;
@@ -404,6 +420,7 @@
     border-bottom: 1px solid #e3e2e2;
     border-radius: 8px 8px 8px 8px;
     background-color: #fff;
+    transition: 0.3s;
 }
 
 .cards__img {
@@ -432,6 +449,10 @@
     font-family: "Proxima Nova", sans-serif;
     font-weight: 300;
     line-height: 22px;
+}
+
+.cards__title {
+    height: calc(var(--card-title-line-height) * 2);
 }
 
 .cards__icon {
@@ -477,7 +498,6 @@
 }
 
 .cards__item:hover {
-    transition: 0.3s;
     transform: scale(1.02);
 }
 
@@ -487,7 +507,8 @@
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    font-family: "Proxima Nova", sans-serif;
 }
 
 .sell__list {
