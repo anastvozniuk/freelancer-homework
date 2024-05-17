@@ -89,6 +89,10 @@
   margin-left: 60px;
 }
 
+.about__introduce-item:last-child {
+  margin-right: 0;
+}
+
 /* contacts */
 
 .contacts {
