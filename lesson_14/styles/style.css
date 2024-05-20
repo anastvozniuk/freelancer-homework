@@ -149,6 +149,11 @@ body {
     border: 1px solid #FFBC57;
 }
 
+.contacts__choice:focus-visible+.contacts__choice-text {
+    outline: 1px solid #FFBC57;
+    outline-offset: 5px;
+}
+
 .contacts__choice:checked+.contacts__choice-text::before {
     background-color: #FFBC57;
     background-image: url(../image/vector.svg);
@@ -339,6 +344,9 @@ body {
     row-gap: 10px;
 }
 
+.label {
+    position: relative;
+}
 
 .payment__method {
     position: absolute;
@@ -386,7 +394,10 @@ body {
     background-repeat: no-repeat;
 }
 
-
+.payment__method:focus-visible+.payment__text {
+    outline: 1px solid #FFBC57;
+    outline-offset: 5px;
+}
 
 
 .payment__method:checked+.payment__text::before {
