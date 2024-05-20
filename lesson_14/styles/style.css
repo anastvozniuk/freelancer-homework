@@ -1,0 +1,485 @@
+/* Підключення */
+
+@import url(./reset.css);
+@import url(./style.css);
+
+body {
+    background-color: rgb(248, 248, 248);
+    font-family: "ProximaNova regular", sans-serif;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+/* !============Інформація про покупця===================! */
+.order-form__contacts {
+    padding: 26px 30px 30px;
+}
+
+.order-form__title {
+    margin: 66px 315px 40px;
+    color: #2b2929;
+    font-size: 40px;
+    line-height: 1.2;
+    /* 48px/40 */
+    text-align: left;
+}
+
+
+.order-form__container {
+    margin: 0 0 0 315px;
+    background-color: white;
+    width: 100%;
+    max-width: 740px;
+}
+
+/* =основні= стилі для заголовків */
+
+.titles {
+    margin: 0 0 30px;
+    display: flex;
+    align-items: center;
+    color: #2B2929;
+    font-size: 26px;
+    text-align: left;
+    line-height: 1.37;
+    /* 34px/26 */
+}
+
+.contacts__names-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.contacts__names {
+    margin-bottom: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contacts__last-name,
+.contacts__first-name,
+.contacts__fathers-name,
+.contacts__telephone {
+    padding: 10px 20px;
+    width: 325px;
+    border: 1px solid #d1d5d5;
+    border-radius: 8px;
+}
+
+.contacts__contact {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+.contacts__names {
+    display: inline-flex;
+    column-gap: 20px;
+
+}
+
+
+.contacts__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__choice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.contacts__choice-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #535353;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 1.9
+        /* 30px/16 */
+    ;
+}
+
+.order-form__line {
+    border: 5px solid rgb(248, 248, 248);
+}
+
+
+/* ======= Псевдокласи та псевдоелементи для розділу Інформація для покупця ============== */
+
+.contacts__title::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: #FFBC57;
+    background-image: url(../image/information.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.contacts__last-name:hover {
+    border: 1px solid #FFBC57;
+}
+
+.contacts__first-name:hover {
+    border: 1px solid #FFBC57;
+}
+
+.contacts__fathers-name:hover {
+    border: 1px solid #FFBC57;
+}
+
+.contacts__telephone:hover {
+    border: 1px solid #FFBC57;
+}
+
+.contacts__choice:checked+.contacts__choice-text::before {
+    background-color: #FFBC57;
+    background-image: url(../image/vector.svg);
+    background-position: center;
+    background-size: 15px;
+}
+
+.contacts__choice-text::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border: 2px solid #d1d5d5;
+    background-repeat: no-repeat;
+}
+
+/* !===================Розділ Способу Доставки ======================! */
+
+.order-form__delivery {
+    padding: 26px 30px 30px;
+}
+
+.button {
+    margin-bottom: 30px;
+}
+
+.button__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.button__label {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 142px;
+    width: 210px;
+    border: 3px solid #f8f8f8;
+}
+
+
+.button__image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #FFBC57;
+    background-image: url(../image/master-card-logo.svg);
+    background-size: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button__text {
+    display: flex;
+    justify-content: center;
+    color: #2b2929;
+    font-size: 16px;
+    line-height: 1.88;
+    /* 30px/16 */
+}
+
+
+.button__price {
+    color: #535353;
+    font-size: 15px;
+    line-height: 1.46
+        /* 22px/15 */
+}
+
+
+.delivery__location {
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.location__vector {
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/location.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.location__text {
+    margin-right: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.location__work-schedule {
+    margin-bottom: 5px;
+    color: #2b2929;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.9;
+    /* 30px/16 */
+}
+
+.location__address {
+    color: #2b2929;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+
+.map__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.26;
+    background-color: #FFBC57;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* =================================== */
+
+.delivery__title::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: #FFBC57;
+    background-image: url(../image/delivery.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.map__button::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../image/on-the-map.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.button__label:hover {
+    border: 3px solid #FFBC57;
+}
+
+.map__form:hover {
+    background-color: #f99a0b;
+}
+
+
+
+
+/* !===========================Розділ Оплата===============================================================! */
+
+.order-form__payment {
+    padding: 26px 30px 30px;
+}
+
+.payment__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 10px;
+}
+
+
+.payment__method {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.payment__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: #2b2929;
+    font-size: 17px;
+    text-align: left;
+    line-height: 1.41;
+    /* 24px/17 */
+}
+
+/* ==================================================== */
+.payment__title::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: #FFBC57;
+    background-image: url(../image/payment.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.payment__text::before {
+    content: "";
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border: 2px solid #d1d5d5;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.payment__method:checked+.payment__text::before {
+    background-color: #FFBC57;
+    background-image: url(../image/vector.svg);
+    background-position: center;
+    background-size: 15px;
+}
+
+.icon-card::after {
+    content: "";
+    margin-left: 10px;
+    width: 48px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url(../image/visa-card-logo.svg);
+    background-position: center;
+    background-size: 48px 32px;
+    background-repeat: no-repeat;
+}
+
+
+
+.pay-privat::after {
+    content: "";
+    margin-left: 10px;
+    width: 48px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url(../image/privat-pay-logo.svg);
+    background-position: center;
+    background-size: 48px 32px;
+    background-repeat: no-repeat;
+}
+
+.monobank::after {
+    content: "";
+    margin-left: 10px;
+    width: 48px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url(../image/mono-bank-logo.svg);
+    background-position: center;
+    background-size: 48px 32px;
+    background-repeat: no-repeat;
+}
+
+.privat-parts::after {
+    content: "";
+    margin-left: 10px;
+    width: 48px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url(../image/privaty-credit-logo.svg);
+    background-position: center;
+    background-size: 48px 32px;
+    background-repeat: no-repeat;
+}
+
+/* !=============Comments section=========================== */
+.order-form__comments {
+    padding: 26px 30px 30px;
+}
+
+
+
+.comments__form {
+    padding: 10px 20px;
+    width: 100%;
+    height: 150px;
+    max-width: 680px;
+    color: #535353;
+    font-size: 16px;
+    border: 1px solid #d1d5d5;
+    border-radius: 8px 8px 8px 8px;
+    resize: none;
+}
+
+/* ============================================== */
+
+.comments__title::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: #FFBC57;
+    background-image: url(../image/coments.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.comments__form:hover {
+    border: 1px solid #FFBC57;
+}
