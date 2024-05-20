@@ -90,6 +90,10 @@ body {
     flex-direction: column;
 }
 
+.label-choice {
+    position: relative;
+}
+
 .contacts__choice {
     position: absolute;
     top: 0;
