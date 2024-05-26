@@ -1,7 +1,7 @@
 /* Підключення */
 
 @import url(./reset.css);
-@import url(./style.css);
+@import url(./fons.css);
 
 body {
     background-color: rgb(248, 248, 248);
@@ -11,6 +11,12 @@ body {
 .wrapper {
     overflow: clip;
     min-height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1290px;
 }
 
 /* !============Інформація про покупця===================! */
